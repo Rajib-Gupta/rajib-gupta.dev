@@ -1,0 +1,31 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with modern gradient -->
+  <rect width="16" height="16" rx="4" fill="url(#gradient)"/>
+  
+  <!-- Letters "RG" in smaller size -->
+  <g transform="translate(3, 4)">
+    <!-- Letter R -->
+    <path d="M1 1 L1 7 M1 1 L4 1 Q5 1 5 2.5 Q5 4 4 4 L1 4 M4 4 L5 7" 
+          stroke="white" 
+          stroke-width="0.9" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none"/>
+    
+    <!-- Letter G -->
+    <path d="M6.5 2.5 Q6.5 1 8 1 Q9.5 1 9.5 2.5 L9.5 4 Q9.5 5.5 8 5.5 Q6.5 5.5 6.5 4 L6.5 3.5 L8.25 3.5" 
+          stroke="white" 
+          stroke-width="0.9" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none"/>
+  </g>
+  
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

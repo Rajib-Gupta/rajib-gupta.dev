@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monochrome design for Safari pinned tab -->
+  <g fill="black">
+    <!-- Letter R as filled paths -->
+    <path d="M2 2 L2 14 L3.5 14 L3.5 9 L6 9 L3.5 9 L3.5 3.5 L6.5 3.5 Q8 3.5 8 5.25 Q8 7 6.5 7 L3.5 7 L3.5 8.5 L6.5 8.5 L8 14 L9.5 14 L8 8.5 Q9.5 8 9.5 5.25 Q9.5 2 6.5 2 L2 2 Z"/>
+    
+    <!-- Letter G as filled paths -->
+    <path d="M11 5.5 Q11 3.5 12.5 3.5 Q14 3.5 14 5.5 L14 7 Q14 8.5 12.5 8.5 Q11 8.5 11 7 L11 6.25 L12.75 6.25 L12.75 7.75 L12.5 7.75 L12.5 7 L11 7 L11 5.5 Z"/>
+  </g>
+</svg>
