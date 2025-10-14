@@ -64,7 +64,7 @@ const ContactPage = () => {
               Get In Touch
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              I'd love to hear from you! Whether you have a project in mind, 
+              I&apos;d love to hear from you! Whether you have a project in mind, 
               need help with development, or just want to say hello.
             </p>
           </div>
@@ -132,7 +132,7 @@ const ContactPage = () => {
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                What's your typical response time?
+                What&apos;s your typical response time?
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
                 I typically respond to emails within 24 hours during business days. 
@@ -152,7 +152,7 @@ const ContactPage = () => {
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                What's your development process like?
+                What&apos;s your development process like?
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
                 I follow an agile approach with regular updates and feedback cycles. 

@@ -26,7 +26,7 @@ const ContactForm = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -41,7 +41,7 @@ const ContactForm = () => {
             Send Me a Message
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Fill out the form below and I'll get back to you as soon as possible.
+            Fill out the form below and I&apos;ll get back to you as soon as possible.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const ContactForm = () => {
                 <svg className="w-5 h-5 text-green-600 dark:text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-green-800 dark:text-green-200">Message sent successfully! I'll get back to you soon.</span>
+                <span className="text-green-800 dark:text-green-200">Message sent successfully! I&apos;ll get back to you soon.</span>
               </div>
             </div>
           )}

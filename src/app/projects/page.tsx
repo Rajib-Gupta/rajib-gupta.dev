@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Projects - Rajib Gupta',
@@ -290,7 +289,7 @@ const ProjectsPage = () => {
             Like What You See?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Let's collaborate on your next project and bring your ideas to life.
+            Let&apos;s collaborate on your next project and bring your ideas to life.
           </p>
           <Link
             href="/contact"

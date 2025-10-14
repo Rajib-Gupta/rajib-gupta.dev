@@ -38,7 +38,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <div className="mb-6">
               <p className="text-blue-600 dark:text-blue-400 font-semibold text-lg mb-2">
-                Hello, I'm
+                Hello, I&apos;m
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4">
                 Rajib{' '}
@@ -56,7 +56,7 @@ const HeroSection = () => {
               </h1>
               <div className="h-16 flex items-center justify-center lg:justify-start">
                 <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300">
-                  I'm a{' '}
+                  I&apos;m a{' '}
                   <span className="text-blue-600 dark:text-blue-400 font-semibold transition-all duration-500">
                     {roles[currentRole]}
                   </span>

@@ -90,7 +90,7 @@ Upgrading to Next.js 15 is straightforward:
    };
    \`\`\`
 
-3. **Test your application** thoroughly, especially if you're using experimental features.
+3. **Test your application** thoroughly, especially if you&apos;re using experimental features.
 
 ## Best Practices
 
@@ -151,7 +151,7 @@ export default function Page() {
 
 Next.js 15 represents a significant step forward in web development tooling. The improvements in performance, developer experience, and React integration make it an excellent choice for modern web applications.
 
-Whether you're starting a new project or considering an upgrade, Next.js 15 offers compelling reasons to make the switch. The enhanced developer experience alone makes the upgrade worthwhile.
+Whether you&apos;re starting a new project or considering an upgrade, Next.js 15 offers compelling reasons to make the switch. The enhanced developer experience alone makes the upgrade worthwhile.
 
 Happy coding! 🚀
     `,

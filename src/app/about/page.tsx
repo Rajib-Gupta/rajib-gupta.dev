@@ -71,7 +71,7 @@ const AboutPage = () => {
               About Me
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              I'm a passionate full-stack developer who loves creating beautiful, functional, 
+              I&apos;m a passionate full-stack developer who loves creating beautiful, functional, 
               and user-friendly digital experiences.
             </p>
           </div>
@@ -89,18 +89,18 @@ const AboutPage = () => {
               </h2>
               <div className="prose prose-lg text-gray-600 dark:text-gray-400 space-y-4">
                 <p>
-                  Hello! I'm Rajib, a results-driven Software Developer with 4 years of experience 
+                  Hello! I&apos;m Rajib, a results-driven Software Developer with 4 years of experience 
                   building scalable web and backend systems for enterprise clients. I specialize in 
                   JavaScript (React, Node.js, Angular), Python, RESTful APIs, and cloud deployments.
                 </p>
                 <p>
-                  Throughout my career, I've demonstrated a proven ability to design secure, 
-                  high-performance data solutions while mentoring cross-functional teams. I'm passionate 
+                  Throughout my career, I&apos;ve demonstrated a proven ability to design secure, 
+                  high-performance data solutions while mentoring cross-functional teams. I&apos;m passionate 
                   about creating robust, scalable applications that solve real-world business challenges 
                   and drive meaningful impact.
                 </p>
                 <p>
-                  I'm currently seeking impactful engineering roles at leading technology companies, 
+                  I&apos;m currently seeking impactful engineering roles at leading technology companies, 
                   where I can leverage my expertise in full-stack development, cloud technologies, 
                   and team leadership to contribute to innovative projects that shape the future of technology.
                 </p>
@@ -249,10 +249,10 @@ const AboutPage = () => {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            I'm always interested in new opportunities and exciting projects.
+            I&apos;m always interested in new opportunities and exciting projects.
           </p>
           <a
             href="/contact"
