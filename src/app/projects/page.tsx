@@ -55,6 +55,17 @@ const ProjectsPage = () => {
       live: "https://rajibgupta-dev.vercel.app/",
       featured: false,
     },
+    {
+      id: 4,
+      title: "Quiz App",
+      description:
+        "A modern, responsive quiz application with dark mode and smooth animations.",
+      image: "/images/angular-quize.png",
+      technologies: ["Angular", "TypeScript"],
+      github: "https://github.com/Rajib-Gupta/ng-quiz-app",
+      live: "https://ng-quiz-app.vercel.app/",
+      featured: false,
+    },
   ];
   const featuredProjects = projects.filter((project) => project.featured);
   const otherProjects = projects.filter((project) => !project.featured);
