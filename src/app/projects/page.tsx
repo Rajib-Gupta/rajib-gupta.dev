@@ -12,23 +12,6 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      title: "NexusDash - Admin Dashboard",
-      description:
-        "The Ultimate Admin Dashboard Solution - Built with cutting-edge technologies including Next.js 15, TypeScript, Tailwind CSS v4, and Framer Motion. Transform your business with professional-grade analytics, sleek UI components, and enterprise-ready features. Perfect for SaaS platforms, e-commerce solutions, and modern web applications.",
-      image: "/images/dashboard.jpg",
-      technologies: [
-        "Next.js 15",
-        "TypeScript",
-        "Tailwind CSS v4",
-        "Framer Motion",
-        "React",
-      ],
-      github: "https://github.com/Rajib-Gupta/next-admin-dashboard-nexusdash",
-      live: "https://nexusdash-lp0122sqd-rajibguptas-projects.vercel.app/",
-      featured: true,
-    },
-    {
-      id: 2,
       title: "AirStatus - Flight Tracking App",
       description:
         "A comprehensive real-time flight tracking application built with Next.js 15 and powered by AviationStack API. Features smart search capabilities, live flight updates, custom alerts, and an intuitive aviation-themed interface. Track flights worldwide with detailed status information and timing updates.",
@@ -44,6 +27,24 @@ const ProjectsPage = () => {
       live: "https://check-you-flight.vercel.app/",
       featured: true,
     },
+    {
+      id: 2,
+      title: "NexusDash - Admin Dashboard",
+      description:
+        "The Ultimate Admin Dashboard Solution - Built with cutting-edge technologies including Next.js 15, TypeScript, Tailwind CSS v4, and Framer Motion. Transform your business with professional-grade analytics, sleek UI components, and enterprise-ready features. Perfect for SaaS platforms, e-commerce solutions, and modern web applications.",
+      image: "/images/dashboard.jpg",
+      technologies: [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Framer Motion",
+        "React",
+      ],
+      github: "https://github.com/Rajib-Gupta/next-admin-dashboard-nexusdash",
+      live: "https://nexusdash-lp0122sqd-rajibguptas-projects.vercel.app/",
+      featured: true,
+    },
+
     {
       id: 3,
       title: "Portfolio Website",
