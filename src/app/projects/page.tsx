@@ -1,87 +1,63 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Projects - Rajib Gupta',
-  description: 'Explore my portfolio of web development projects, showcasing modern technologies and creative solutions.',
+  title: "Projects - Rajib Gupta",
+  description:
+    "Explore my portfolio of web development projects, showcasing modern technologies and creative solutions.",
 };
 
 const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      title: 'NexusDash - Admin Dashboard',
-      description: 'The Ultimate Admin Dashboard Solution - Built with cutting-edge technologies including Next.js 15, TypeScript, Tailwind CSS v4, and Framer Motion. Transform your business with professional-grade analytics, sleek UI components, and enterprise-ready features. Perfect for SaaS platforms, e-commerce solutions, and modern web applications.',
-      image: 'https://drive.google.com/file/d/1z1B6Lqm9rRye98nm3tDIQQxfSWn5p9nk/view?usp=sharing',
-      technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS v4', 'Framer Motion', 'React'],
-      github: 'https://github.com/Rajib-Gupta/next-admin-dashboard-nexusdash',
-      live: 'https://nexusdash-lp0122sqd-rajibguptas-projects.vercel.app/',
+      title: "NexusDash - Admin Dashboard",
+      description:
+        "The Ultimate Admin Dashboard Solution - Built with cutting-edge technologies including Next.js 15, TypeScript, Tailwind CSS v4, and Framer Motion. Transform your business with professional-grade analytics, sleek UI components, and enterprise-ready features. Perfect for SaaS platforms, e-commerce solutions, and modern web applications.",
+      image: "/images/dashboard.jpg",
+      technologies: [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Framer Motion",
+        "React",
+      ],
+      github: "https://github.com/Rajib-Gupta/next-admin-dashboard-nexusdash",
+      live: "https://nexusdash-lp0122sqd-rajibguptas-projects.vercel.app/",
       featured: true,
     },
     {
       id: 2,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'PostgreSQL'],
-      github: 'https://github.com/yourusername/ecommerce-platform',
-      live: 'https://ecommerce-platform-demo.vercel.app',
+      title: "AirStatus - Flight Tracking App",
+      description:
+        "A comprehensive real-time flight tracking application built with Next.js 15 and powered by AviationStack API. Features smart search capabilities, live flight updates, custom alerts, and an intuitive aviation-themed interface. Track flights worldwide with detailed status information and timing updates.",
+      image: "/images/download.png",
+      technologies: [
+        "Next.js 15",
+        "TypeScript",
+        "AviationStack API",
+        "Tailwind CSS",
+        "Real-time Updates",
+      ],
+      github: "https://github.com/Rajib-Gupta/realtime-flight-status",
+      live: "https://check-you-flight.vercel.app/",
       featured: true,
     },
     {
       id: 3,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      image: '/api/placeholder/400/250',
-      technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
-      github: 'https://github.com/yourusername/task-manager',
-      live: 'https://task-manager-demo.vercel.app',
-      featured: true,
-    },
-    {
-      id: 4,
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard with location-based forecasts and beautiful data visualizations.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'CSS3'],
-      github: 'https://github.com/yourusername/weather-dashboard',
-      live: 'https://weather-dashboard-demo.vercel.app',
-      featured: false,
-    },
-    {
-      id: 5,
-      title: 'Blog CMS',
-      description: 'A headless CMS for bloggers with markdown support, SEO optimization, and admin dashboard.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Markdown'],
-      github: 'https://github.com/yourusername/blog-cms',
-      live: 'https://blog-cms-demo.vercel.app',
-      featured: false,
-    },
-    {
-      id: 6,
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website with dark mode and smooth animations.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
-      github: 'https://github.com/yourusername/portfolio',
-      live: 'https://your-portfolio.vercel.app',
-      featured: false,
-    },
-    {
-      id: 7,
-      title: 'Social Media Analytics',
-      description: 'Analytics dashboard for social media metrics with data visualization and reporting features.',
-      image: '/api/placeholder/400/250',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'Redis'],
-      github: 'https://github.com/yourusername/social-analytics',
-      live: 'https://social-analytics-demo.vercel.app',
+      title: "Portfolio Website",
+      description:
+        "A modern, responsive portfolio website with dark mode and smooth animations.",
+      image: "/images/protfolio.png",
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
+      github: "https://github.com/yourusername/portfolio",
+      live: "https://rajibgupta-dev.vercel.app/",
       featured: false,
     },
   ];
-
-  const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
+  const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -93,8 +69,8 @@ const ProjectsPage = () => {
               My Projects
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              A collection of projects that showcase my skills in web development, 
-              from concept to deployment.
+              A collection of projects that showcase my skills in web
+              development, from concept to deployment.
             </p>
           </div>
         </div>
@@ -117,25 +93,22 @@ const ProjectsPage = () => {
               <div
                 key={project.id}
                 className={`flex flex-col lg:flex-row items-center gap-12 ${
-                  index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
               >
                 {/* Project Image */}
                 <div className="lg:w-1/2">
                   <div className="relative group">
-                    <div className="w-full h-80 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg shadow-2xl p-1">
+                    <div className="w-full h-80 rounded-lg shadow-2xl bg-gradient-to-br from-blue-400 to-purple-600 p-1">
                       <div className="w-full h-full rounded-lg overflow-hidden relative bg-white dark:bg-gray-800">
-                        {project.image.startsWith('/') || project.image.startsWith('http') ? (
-                          <img
-                            src={project?.image}
-                            alt={project.title}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center">
-                            <span className="text-gray-400 text-lg">Project Preview</span>
-                          </div>
-                        )}
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover z-10"
+                          fill={true}
+                          quality={100}
+                          priority
+                        />
                       </div>
                     </div>
                     <div className="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-10 rounded-lg transition-all duration-300"></div>
@@ -171,8 +144,12 @@ const ProjectsPage = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-6 py-2 border-2 border-gray-800 dark:border-gray-200 text-gray-800 dark:text-gray-200 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-200 dark:hover:text-gray-800 font-medium rounded-lg transition-colors duration-200"
                     >
-                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                      <svg
+                        className="w-5 h-5 mr-2"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
                       </svg>
                       View Code
                     </a>
@@ -182,8 +159,18 @@ const ProjectsPage = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-6 py-2 bg-blue-600 text-white hover:bg-blue-700 font-medium rounded-lg transition-colors duration-200"
                     >
-                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      <svg
+                        className="w-5 h-5 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
                       </svg>
                       Live Demo
                     </a>
@@ -216,17 +203,14 @@ const ProjectsPage = () => {
                 {/* Project Image */}
                 <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-600 p-1">
                   <div className="w-full h-full rounded-lg overflow-hidden relative">
-                    {project.image.startsWith('http') ? (
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-white dark:bg-gray-800 flex items-center justify-center">
-                        <span className="text-gray-400">Project Preview</span>
-                      </div>
-                    )}
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      fill={true}
+                      quality={100}
+                      priority
+                    />
                   </div>
                 </div>
 
@@ -289,15 +273,26 @@ const ProjectsPage = () => {
             Like What You See?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Let&apos;s collaborate on your next project and bring your ideas to life.
+            Let&apos;s collaborate on your next project and bring your ideas to
+            life.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-lg"
           >
             Start a Project
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="ml-2 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>
